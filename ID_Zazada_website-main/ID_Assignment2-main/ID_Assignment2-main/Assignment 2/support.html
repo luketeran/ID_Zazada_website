@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang='en-US'>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, inital-scale=1.0">
+        <title>Contact Us</title>
+        <link href="normalize.css" rel="stylesheet" type="text/css" />
+        <link href="style.css" rel="stylesheet" type="text/css" />
+        <script src="script.js"></script>
+        <link href="https://fonts.googleapis.com/css2?family=Abel&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Lobster+Two:ital@1&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Alegreya+Sans&display=swap" rel="stylesheet">
+    </head>
+    <body>
+        <!-- Header & Navigation -->
+        <div class="navi">
+          <ul>
+              <li id=headerName><a href="index.html">Zazada</a></li>
+              <nav class="navContainer">
+                  <li><a href="register.html">Sign Up</a></li>                
+                  <li><a href="login.html">Login</a></li>
+                  <li><a href="game.html">Game</a></li>
+                  <li><a class="active" href="support.html">Customer Support</a></li>
+                  <li><a href="index.html">Home</a></li>
+              </nav>
+          </ul>
+      </div>
+
+        <!-- Contact Us -->
+        <h1 id="contactHeader">Hi, how can we help?</h1>
+        <p id="contactPara">Drop us a message, and we will get back in touch with you!</p>
+
+        <div class="contactForm">
+            <form>
+              <label for="name">Name</label>
+              <input type="text" id="name" name="name" placeholder="Your name..">
+          
+              <label for="email">Email</label>
+              <input type="text" id="email" name="email" placeholder="Your email..">
+          
+              <label for="subj">Subject</label>
+              <select id="subj" name="subj">
+                <option value="general">General</option>
+                <option value="enquiries">Enquiries</option>
+                <option value="feedback">Feedback</option>
+                <option value="deliveries">Deliveries</option>
+                <option value="others">Others</option>
+              </select>
+          
+              <label for="message">Message</label>
+              <textarea id="message" name="message" style="height:200px"></textarea>
+          
+              <input type="submit" onclick="return clicked();" value="Send">
+            </form>
+          </div>
+        
+    </body>
+</html>
